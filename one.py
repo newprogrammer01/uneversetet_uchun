@@ -1,13 +1,16 @@
-"""BOSCH va PHILIPS konsernlari tomonidan ishlab chiqilgan 
-mahsulot nomlaridan tashkil topgan ikkita ro’yxat berilgan. 
-Har ikkala 
-firma tomonidan ishlab chiqilgan bir xil mahsulotlar ro’yxati tuzilsin.  
-"""
-list=[]
-BOSCH=['kitob','daftar','ruchka','qalam','marker','bloknot','aksisuarlar']
+"""Muvozanatlashgan T daraxtni hosil qiling, uni 
+(binar) daraxt ko’rinishida ekranga chop qiling va:
+- berilgan daraxtdagi qiymati juft son bo’lgan 
+tugunlarni olib tashlang;
+- hosil bo’lgan daraxtdagi barg tugunlari sonini
+ aniqlang va ularning qiymatlarini chiqaring."""
 
-PHILIPS=['Xaritalar','Doskalar','printer','marker','daftar','soat','qalam']
-if BOSCH[3]==PHILIPS[6]:
-
-   list.append(BOSCH[3])
-print(list) #['qalam']
+def main(l):
+    list=[]
+    for i in range(1,len(l)+1):
+        
+        if i%2==1:
+         list.append(i)
+    return list
+print(main([1,2,3,4,5,6,7,8,9,10]))
+#[1, 3, 5, 7, 9]
